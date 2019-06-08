@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS paciente;
+
+CREATE TABLE paciente (
+    id SERIAL PRIMARY KEY,
+    nome TEXT NOT NULL,
+    data_nasc DATE NOT NULL,
+    n_pro TEXT,
+    hosp VARCHAR(4) NOT NULL,
+    lateralidade VARCHAR(10),
+    sexo VARCHAR(9) NOT NULL,
+    nacionalidade TEXT NOT NULL,
+    responsavel TEXT,
+    ocup_responsavel TEXT,
+    escolaridade TEXT,
+    condicao TEXT,
+    queixa TEXT,
+    n_rel TEXT,
+    i_aval TEXT,
+    f_aval TEXT,
+    excluido BOOLEAN NOT NULL DEFAULT FALSE
+);

@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS user;
+
+CREATE TABLE user (
+    id_user BIGINT PRIMARY KEY,
+    login VARCHAR(15) UNIQUE NOT NULL,
+    senha TEXT NOT NULL,
+    email VARCHAR(254) UNIQUE NOT NULL,
+    nome TEXT NOT NULL,
+    setor CHAR NOT NULL,
+    obs TEXT,
+    excluido BOOLEAN NOT NULL DEFAULT false
+);
+
+INSERT INTO user VALUES
+(1234, 'ETVO', '07d3401f144dfab5d69188ecea7ba946', 'estevao.prolim@gmail.com', 'Estevão Pereira Rolim', 
+'a', '', DEFAULT);

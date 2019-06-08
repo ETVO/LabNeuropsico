@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS direitos;
+
+CREATE TABLE direitos (
+    id_direitos SERIAL PRIMARY KEY,
+    id_user BIGINT NOT NULL,
+    cad BOOLEAN NOT NULL,
+    con BOOLEAN NOT NULL,
+    alt BOOLEAN NOT NULL,
+    exc BOOLEAN NOT NULL,
+    FOREIGN KEY (id_user) REFERENCES user(id_user)
+);
+
+INSERT INTO direitos VALUES
+(DEFAULT, 1234, true, true, true, true);

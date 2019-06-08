@@ -1,0 +1,8 @@
+﻿DROP TABLE IF EXISTS public.avaliacao;
+
+CREATE TABLE public.avaliacao (
+	id_avaliacao BIGSERIAL PRIMARY KEY,
+	id_instrumento BIGINT NOT NULL REFERENCES instrumento(id_instrumento),
+	id_relatorio BIGINT NOT NULL REFERENCES relatorio(id_relatorio),
+	excluido BOOL NOT NULL DEFAULT false
+);

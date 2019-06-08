@@ -1,0 +1,11 @@
+﻿DROP TABLE IF EXISTS public.relatorio;
+
+CREATE TABLE public.relatorio (
+	id_relatorio BIGSERIAL PRIMARY KEY,
+    id_paciente BIGINT NOT NULL REFERENCES paciente(id_paciente),
+	num_relatorio TEXT,
+	queixa_clinica TEXT NOT NULL,
+	inicio_aval DATE NOT NULL,
+	fim_aval DATE NOT NULL,
+	excluido BOOLEAN NOT NULL DEFAULT false
+);
