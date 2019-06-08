@@ -1,0 +1,9 @@
+﻿Cadastro de Avaliação
+\n
+\nAs avaliações são cadastradas de acordo com o instrumento selecionado, que serve como base para dispor os campos a serem preenchidos.
+\nO formulário de preenchimento possui três colunas:
+\n	- Campo: nome do campo no instrumento;
+\n	- Tipo: tipo de entrada aceita pelo instrumento para este campo;
+\n	- Valor: valor coletado na avaliação realizada.
+\n
+\nPara preencher a coluna "Valor", o usuário deve clicar duas vezes na célula ou selecionar esta e apertar 'F2', no teclado.

@@ -1,0 +1,13 @@
+﻿DROP TABLE IF EXISTS public.user;
+
+CREATE TABLE public.user (
+    id_user BIGSERIAL PRIMARY KEY,
+    nome TEXT NOT NULL,
+    login VARCHAR(16) UNIQUE NOT NULL,
+    senha TEXT NOT NULL,
+    email VARCHAR(254) UNIQUE NOT NULL,
+    hospital CHAR NOT NULL,
+    obs TEXT,
+	admin BOOLEAN NOT NULL DEFAULT false,
+    excluido BOOLEAN NOT NULL DEFAULT false
+);

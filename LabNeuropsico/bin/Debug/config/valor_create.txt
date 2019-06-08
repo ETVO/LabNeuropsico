@@ -1,0 +1,12 @@
+﻿DROP TABLE IF EXISTS public.valor;
+
+CREATE TABLE public.valor (
+	id_valor BIGSERIAL PRIMARY KEY,
+	id_avaliacao BIGINT NOT NULL REFERENCES avaliacao(id_avaliacao),
+	id_campo BIGINT NOT NULL REFERENCES campo(id_campo),
+	vdate DATE, 
+	vint INTEGER, 
+	vdouble NUMERIC(10,2),
+	vtext TEXT,
+	excluido BOOL NOT NULL DEFAULT false
+);

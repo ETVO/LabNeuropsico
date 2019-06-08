@@ -1,0 +1,8 @@
+﻿DROP TABLE IF EXISTS public.instrumento;
+
+CREATE TABLE public.instrumento (
+	id_instrumento BIGSERIAL PRIMARY KEY,
+	nome TEXT NOT NULL,
+	tipo TEXT NOT NULL,
+	excluido BOOL NOT NULL DEFAULT false
+);

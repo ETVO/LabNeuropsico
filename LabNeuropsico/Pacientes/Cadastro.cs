@@ -21,6 +21,9 @@ namespace LabNeuropsico.Pacientes
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
+            DateTime today = DateTime.Today.Date;
+            dataNasc.MaxDate = today;
+            dataNasc.Value = today;
         }
 
         private void btnFechar_Click(object sender, EventArgs e)

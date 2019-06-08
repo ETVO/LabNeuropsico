@@ -24,7 +24,7 @@ namespace LabNeuropsico.Model.Suporte
         private static string port = "5432";
         private static string db = "postgres";
         private static string user = "postgres";
-        private static string password = "";
+        private static string password = "postgres";
 
         private static List<string> tables = new List<string>(new string[] { "valid", "paciente", "user", "relatorio", "instrumento", "campo", "avaliacao", "valor" });
 

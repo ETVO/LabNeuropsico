@@ -146,6 +146,7 @@ namespace LabNeuropsico.Pacientes
             string sql = "SELECT id_paciente, nome, data_nasc, hospital, condicao, CASE WHEN excluido IS TRUE THEN 'Excluído' ELSE 'Disponível' END FROM paciente WHERE false = true ";
             cleandt = Servico.PopDataTable(sql);
             limpaDGV();
+            buscar();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

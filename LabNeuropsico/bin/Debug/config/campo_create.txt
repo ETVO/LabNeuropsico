@@ -1,0 +1,9 @@
+﻿DROP TABLE IF EXISTS public.campo;
+
+CREATE TABLE public.campo (
+	id_campo BIGSERIAL PRIMARY KEY,
+	id_instrumento BIGINT NOT NULL REFERENCES instrumento(id_instrumento),
+	nome TEXT NOT NULL,
+	tipo TEXT NOT NULL,
+	excluido BOOL NOT NULL DEFAULT false
+);

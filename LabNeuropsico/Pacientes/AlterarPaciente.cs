@@ -108,6 +108,10 @@ namespace LabNeuropsico.Pacientes
             }
             else
                 fillFields();
+
+            DateTime today = DateTime.Today.Date;
+            dataNasc.MaxDate = today;
+            dataNasc.Value = today;
         }
 
         private void btnFechar_Click(object sender, EventArgs e)

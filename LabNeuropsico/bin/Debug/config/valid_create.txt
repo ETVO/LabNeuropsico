@@ -1,0 +1,5 @@
+﻿DROP TABLE IF EXISTS public.valid;
+
+CREATE TABLE public.valid (
+	valido BOOL NOT NULL DEFAULT true
+);

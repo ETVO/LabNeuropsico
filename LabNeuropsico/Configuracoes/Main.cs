@@ -28,5 +28,23 @@ namespace LabNeuropsico.Configuracoes
                 Application.Restart();
             }
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            if (Util.Confirm("Deseja realmente fechar o sistema?"))
+            {
+                this.Close();
+            }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Util.DisposeForm("Index");
+
+            Index index = new Index();
+            this.Hide();
+            index.ShowDialog();
+            this.Close();
+        }
     }
 }

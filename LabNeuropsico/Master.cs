@@ -54,7 +54,6 @@ namespace LabNeuropsico
         private void iniciar()
         {
             Index index = new Index();
-            //Pacientes.Visualizar index = new Pacientes.Visualizar();
             this.Hide();
             index.ShowDialog();
             this.Close();

@@ -1,0 +1,17 @@
+﻿DROP TABLE IF EXISTS public.paciente;
+
+CREATE TABLE public.paciente (
+    id_paciente BIGSERIAL PRIMARY KEY,
+    nome TEXT NOT NULL,
+    data_nasc DATE NOT NULL,
+    lateralidade CHAR,
+    escolaridade TEXT,
+    sexo CHAR NOT NULL,
+    nacionalidade CHAR NOT NULL,
+    responsavel TEXT,
+    ocup_responsavel TEXT,
+    prontuario TEXT,
+    hospital CHAR NOT NULL,
+    condicao TEXT,
+    excluido BOOLEAN NOT NULL DEFAULT FALSE
+);

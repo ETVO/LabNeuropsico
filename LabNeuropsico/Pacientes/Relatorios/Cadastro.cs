@@ -70,6 +70,12 @@ namespace LabNeuropsico.Pacientes.Relatorios
         private void CadastroRelatorio_Load(object sender, EventArgs e)
         {
             lblNome.Text = paciente.Nome;
+
+            DateTime today = DateTime.Today.Date;
+            dataInicioAval.MaxDate = today;
+            dataInicioAval.Value = today;
+            dataFimAval.MaxDate = today;
+            dataFimAval.Value = today;
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
