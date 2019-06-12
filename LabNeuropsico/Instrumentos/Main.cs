@@ -45,5 +45,15 @@ namespace LabNeuropsico.Instrumentos
             index.ShowDialog();
             this.Close();
         }
+
+        private void btnConsultaGeral_Click(object sender, EventArgs e)
+        {
+            Util.DisposeForm("Instrumentos.ConsultaGeral");
+
+            ConsultaGeral consultaGeral = new ConsultaGeral();
+            this.Hide();
+            consultaGeral.ShowDialog();
+            this.Close();
+        }
     }
 }

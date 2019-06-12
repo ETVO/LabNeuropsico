@@ -467,8 +467,6 @@ namespace LabNeuropsico.Model
                 "vtext = @" + (i++) + " " +
                 "WHERE id_valor = " + v.Id_Valor;
 
-            Util.Alert(sql);
-
             Connection.Open();
             Connection.Run(sql, param);
             Connection.Close();
@@ -503,6 +501,17 @@ namespace LabNeuropsico.Model
             string sql = "UPDATE avaliacao" +
                 " SET excluido = " + excluido +
                 " WHERE id_avaliacao = " + a.Id_Avaliacao + ";";
+
+            Connection.Open();
+            Connection.Run(sql);
+            Connection.Close();
+        }
+
+        public static void InstrumentoExcluido(Instrumento i, bool excluido)
+        {
+            string sql = "UPDATE instrumento" +
+                " SET excluido = " + excluido +
+                " WHERE id_instrumento = " + i.Id_Instrumento + ";";
 
             Connection.Open();
             Connection.Run(sql);

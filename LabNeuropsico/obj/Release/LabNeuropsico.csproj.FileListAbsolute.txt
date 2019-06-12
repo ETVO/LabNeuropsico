@@ -298,3 +298,5 @@ C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeurops
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.csproj.CopyComplete
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.exe
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.pdb
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Instrumentos.ConsultaGeral.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Instrumentos.Visualizar.resources

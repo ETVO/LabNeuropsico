@@ -23,7 +23,9 @@ namespace LabNeuropsico.Configuracoes
         {
             if(Util.Confirm("ATENÇÃO!\nDeseja realmente restaurar todos os dados?\n\nProsseguir apagará permanentemente todos os dados salvos na base de dados do sistema!"))
             {
+                Connection.Open();
                 Connection.DropTables();
+                Connection.Close();
 
                 Application.Restart();
             }

@@ -66,10 +66,10 @@ namespace LabNeuropsico.Pacientes.Relatorios.Avaliacoes
                 else
                     dgvCampos.Columns[c].ReadOnly = true;
 
-                //if (colunas[c] == "Id")
-                //{
-                //    dgvCampos.Columns[c].Visible = false;
-                //}
+                if (colunas[c] == "Id")
+                {
+                    dgvCampos.Columns[c].Visible = false;
+                }
             }
 
             if (dgvCampos.Rows.Count == 0)
@@ -210,6 +210,8 @@ namespace LabNeuropsico.Pacientes.Relatorios.Avaliacoes
             }
         }
 
+        Campo campo;
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if(Util.Confirm("Deseja realmente salvar as alterações realizadas?"))
@@ -219,7 +221,6 @@ namespace LabNeuropsico.Pacientes.Relatorios.Avaliacoes
                     Servico.AlterarAvaliacao(avaliacao);
 
                     long id_valor;
-                    Campo campo;
 
                     Valor valor;
 
@@ -246,7 +247,7 @@ namespace LabNeuropsico.Pacientes.Relatorios.Avaliacoes
                 }
                 catch (Exception ex)
                 {
-                    Util.Alert("Algo deu errado!\n\nMais detalhes: " + ex.Message, MessageBoxIcon.Error);
+                    Util.Alert("Algo deu errado!\n\nMais detalhes: " + ex.Message + "\n\nCheque o campo " + campo.Nome, MessageBoxIcon.Error);
                 }
             }
         }

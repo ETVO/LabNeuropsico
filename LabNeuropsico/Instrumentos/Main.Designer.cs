@@ -32,6 +32,7 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnConsultaGeral = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -77,11 +78,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Instrumentos";
             // 
+            // btnConsultaGeral
+            // 
+            this.btnConsultaGeral.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaGeral.Location = new System.Drawing.Point(19, 133);
+            this.btnConsultaGeral.Name = "btnConsultaGeral";
+            this.btnConsultaGeral.Size = new System.Drawing.Size(166, 41);
+            this.btnConsultaGeral.TabIndex = 15;
+            this.btnConsultaGeral.Text = "Consulta Geral";
+            this.btnConsultaGeral.UseVisualStyleBackColor = true;
+            this.btnConsultaGeral.Click += new System.EventHandler(this.btnConsultaGeral_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 450);
+            this.Controls.Add(this.btnConsultaGeral);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnCadastrar);
@@ -103,5 +116,6 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnConsultaGeral;
     }
 }

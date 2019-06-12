@@ -113,7 +113,7 @@ namespace LabNeuropsico.Pacientes.Relatorios
             if (!checkExcluido.Checked)
                 sql += "AND a.excluido = false ";
 
-            sql += "ORDER BY i.nome ASC ";
+            sql += "AND i.excluido = FALSE ORDER BY i.nome ASC ";
 
             dgvAvaliacoes.DataSource = Servico.PopDataTable(sql);
             ajustesDGV();

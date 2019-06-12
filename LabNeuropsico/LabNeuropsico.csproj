@@ -86,11 +86,23 @@
     <Compile Include="Instrumentos\Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Instrumentos\ConsultaGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrumentos\ConsultaGeral.Designer.cs">
+      <DependentUpon>ConsultaGeral.cs</DependentUpon>
+    </Compile>
     <Compile Include="Instrumentos\Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Instrumentos\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrumentos\Visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrumentos\Visualizar.Designer.cs">
+      <DependentUpon>Visualizar.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -175,8 +187,14 @@
     <EmbeddedResource Include="Instrumentos\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Instrumentos\ConsultaGeral.resx">
+      <DependentUpon>ConsultaGeral.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Instrumentos\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrumentos\Visualizar.resx">
+      <DependentUpon>Visualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

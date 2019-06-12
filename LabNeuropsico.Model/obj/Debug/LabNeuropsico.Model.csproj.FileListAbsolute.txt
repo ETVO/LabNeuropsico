@@ -227,7 +227,6 @@ C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\bin\Debug\System
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\bin\Debug\System.ValueTuple.xml
-C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.csprojAssemblyReference.cache
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.csproj.CopyComplete
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.dll

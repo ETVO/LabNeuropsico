@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using LabNeuropsico.Model.Entidades;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -287,7 +288,6 @@ namespace LabNeuropsico.Model.Suporte
                     Run(sql);
                 }
             }
-
         }
 
         /// <summary>

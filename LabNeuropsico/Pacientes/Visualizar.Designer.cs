@@ -90,6 +90,7 @@
             // 
             // tabDados
             // 
+            this.tabDados.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tabDados.Controls.Add(this.btnExcluir);
             this.tabDados.Controls.Add(this.txtCondicao);
             this.tabDados.Controls.Add(this.btnAlterar);
@@ -121,7 +122,6 @@
             this.tabDados.Size = new System.Drawing.Size(542, 304);
             this.tabDados.TabIndex = 0;
             this.tabDados.Text = "Dados";
-            this.tabDados.UseVisualStyleBackColor = true;
             // 
             // btnExcluir
             // 

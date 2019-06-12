@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBusca = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkNome = new System.Windows.Forms.CheckBox();
-            this.checkCondicao = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkFOB = new System.Windows.Forms.CheckBox();
-            this.checkHRAC = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.checkEstrangeiro = new System.Windows.Forms.CheckBox();
-            this.checkBrasileiro = new System.Windows.Forms.CheckBox();
             this.checkExcluido = new System.Windows.Forms.CheckBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.lblNenhum = new System.Windows.Forms.Label();
             this.dgvPacientes = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.checkBrasileiro = new System.Windows.Forms.CheckBox();
+            this.checkEstrangeiro = new System.Windows.Forms.CheckBox();
+            this.checkHRAC = new System.Windows.Forms.CheckBox();
+            this.checkFOB = new System.Windows.Forms.CheckBox();
+            this.checkNome = new System.Windows.Forms.CheckBox();
+            this.checkCondicao = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,30 +89,6 @@
             this.label1.TabIndex = 74;
             this.label1.Text = "Filtros:";
             // 
-            // checkNome
-            // 
-            this.checkNome.AutoSize = true;
-            this.checkNome.Checked = true;
-            this.checkNome.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkNome.Location = new System.Drawing.Point(169, 87);
-            this.checkNome.Name = "checkNome";
-            this.checkNome.Size = new System.Drawing.Size(54, 17);
-            this.checkNome.TabIndex = 1;
-            this.checkNome.Text = "Nome";
-            this.checkNome.UseVisualStyleBackColor = true;
-            this.checkNome.CheckedChanged += new System.EventHandler(this.checkNome_CheckedChanged);
-            // 
-            // checkCondicao
-            // 
-            this.checkCondicao.AutoSize = true;
-            this.checkCondicao.Location = new System.Drawing.Point(229, 87);
-            this.checkCondicao.Name = "checkCondicao";
-            this.checkCondicao.Size = new System.Drawing.Size(119, 17);
-            this.checkCondicao.TabIndex = 1;
-            this.checkCondicao.Text = "Diagnóstico médico";
-            this.checkCondicao.UseVisualStyleBackColor = true;
-            this.checkCondicao.CheckedChanged += new System.EventHandler(this.checkCondicao_CheckedChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -122,67 +98,6 @@
             this.label3.Size = new System.Drawing.Size(59, 17);
             this.label3.TabIndex = 79;
             this.label3.Text = "Hospital";
-            // 
-            // checkFOB
-            // 
-            this.checkFOB.AutoSize = true;
-            this.checkFOB.Checked = true;
-            this.checkFOB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkFOB.Location = new System.Drawing.Point(128, 156);
-            this.checkFOB.Name = "checkFOB";
-            this.checkFOB.Size = new System.Drawing.Size(47, 17);
-            this.checkFOB.TabIndex = 3;
-            this.checkFOB.Text = "FOB";
-            this.checkFOB.UseVisualStyleBackColor = true;
-            // 
-            // checkHRAC
-            // 
-            this.checkHRAC.AutoSize = true;
-            this.checkHRAC.Checked = true;
-            this.checkHRAC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkHRAC.Location = new System.Drawing.Point(61, 156);
-            this.checkHRAC.Name = "checkHRAC";
-            this.checkHRAC.Size = new System.Drawing.Size(56, 17);
-            this.checkHRAC.TabIndex = 3;
-            this.checkHRAC.Text = "HRAC";
-            this.checkHRAC.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(229, 136);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 17);
-            this.label4.TabIndex = 81;
-            this.label4.Text = "Nacionalidade";
-            this.label4.Visible = false;
-            // 
-            // checkEstrangeiro
-            // 
-            this.checkEstrangeiro.AutoSize = true;
-            this.checkEstrangeiro.Checked = true;
-            this.checkEstrangeiro.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkEstrangeiro.Location = new System.Drawing.Point(308, 156);
-            this.checkEstrangeiro.Name = "checkEstrangeiro";
-            this.checkEstrangeiro.Size = new System.Drawing.Size(79, 17);
-            this.checkEstrangeiro.TabIndex = 4;
-            this.checkEstrangeiro.Text = "Estrangeiro";
-            this.checkEstrangeiro.UseVisualStyleBackColor = true;
-            this.checkEstrangeiro.Visible = false;
-            // 
-            // checkBrasileiro
-            // 
-            this.checkBrasileiro.AutoSize = true;
-            this.checkBrasileiro.Checked = true;
-            this.checkBrasileiro.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBrasileiro.Location = new System.Drawing.Point(232, 156);
-            this.checkBrasileiro.Name = "checkBrasileiro";
-            this.checkBrasileiro.Size = new System.Drawing.Size(68, 17);
-            this.checkBrasileiro.TabIndex = 4;
-            this.checkBrasileiro.Text = "Brasileiro";
-            this.checkBrasileiro.UseVisualStyleBackColor = true;
-            this.checkBrasileiro.Visible = false;
             // 
             // checkExcluido
             // 
@@ -248,14 +163,14 @@
             this.dgvPacientes.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvPacientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPacientes.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPacientes.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPacientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvPacientes.Location = new System.Drawing.Point(39, 185);
             this.dgvPacientes.Name = "dgvPacientes";
@@ -268,6 +183,91 @@
             this.dgvPacientes.Size = new System.Drawing.Size(579, 309);
             this.dgvPacientes.TabIndex = 87;
             this.dgvPacientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellDoubleClick);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(229, 136);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 17);
+            this.label4.TabIndex = 81;
+            this.label4.Text = "Nacionalidade";
+            this.label4.Visible = false;
+            // 
+            // checkBrasileiro
+            // 
+            this.checkBrasileiro.AutoSize = true;
+            this.checkBrasileiro.Checked = true;
+            this.checkBrasileiro.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBrasileiro.Location = new System.Drawing.Point(232, 156);
+            this.checkBrasileiro.Name = "checkBrasileiro";
+            this.checkBrasileiro.Size = new System.Drawing.Size(68, 17);
+            this.checkBrasileiro.TabIndex = 4;
+            this.checkBrasileiro.Text = "Brasileiro";
+            this.checkBrasileiro.UseVisualStyleBackColor = true;
+            this.checkBrasileiro.Visible = false;
+            // 
+            // checkEstrangeiro
+            // 
+            this.checkEstrangeiro.AutoSize = true;
+            this.checkEstrangeiro.Checked = true;
+            this.checkEstrangeiro.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkEstrangeiro.Location = new System.Drawing.Point(308, 156);
+            this.checkEstrangeiro.Name = "checkEstrangeiro";
+            this.checkEstrangeiro.Size = new System.Drawing.Size(79, 17);
+            this.checkEstrangeiro.TabIndex = 4;
+            this.checkEstrangeiro.Text = "Estrangeiro";
+            this.checkEstrangeiro.UseVisualStyleBackColor = true;
+            this.checkEstrangeiro.Visible = false;
+            // 
+            // checkHRAC
+            // 
+            this.checkHRAC.AutoSize = true;
+            this.checkHRAC.Checked = true;
+            this.checkHRAC.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkHRAC.Location = new System.Drawing.Point(61, 156);
+            this.checkHRAC.Name = "checkHRAC";
+            this.checkHRAC.Size = new System.Drawing.Size(56, 17);
+            this.checkHRAC.TabIndex = 3;
+            this.checkHRAC.Text = "HRAC";
+            this.checkHRAC.UseVisualStyleBackColor = true;
+            // 
+            // checkFOB
+            // 
+            this.checkFOB.AutoSize = true;
+            this.checkFOB.Checked = true;
+            this.checkFOB.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkFOB.Location = new System.Drawing.Point(128, 156);
+            this.checkFOB.Name = "checkFOB";
+            this.checkFOB.Size = new System.Drawing.Size(47, 17);
+            this.checkFOB.TabIndex = 3;
+            this.checkFOB.Text = "FOB";
+            this.checkFOB.UseVisualStyleBackColor = true;
+            // 
+            // checkNome
+            // 
+            this.checkNome.AutoSize = true;
+            this.checkNome.Checked = true;
+            this.checkNome.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkNome.Location = new System.Drawing.Point(169, 87);
+            this.checkNome.Name = "checkNome";
+            this.checkNome.Size = new System.Drawing.Size(54, 17);
+            this.checkNome.TabIndex = 1;
+            this.checkNome.Text = "Nome";
+            this.checkNome.UseVisualStyleBackColor = true;
+            this.checkNome.CheckedChanged += new System.EventHandler(this.checkNome_CheckedChanged);
+            // 
+            // checkCondicao
+            // 
+            this.checkCondicao.AutoSize = true;
+            this.checkCondicao.Location = new System.Drawing.Point(229, 87);
+            this.checkCondicao.Name = "checkCondicao";
+            this.checkCondicao.Size = new System.Drawing.Size(119, 17);
+            this.checkCondicao.TabIndex = 1;
+            this.checkCondicao.Text = "Diagnóstico médico";
+            this.checkCondicao.UseVisualStyleBackColor = true;
+            this.checkCondicao.CheckedChanged += new System.EventHandler(this.checkCondicao_CheckedChanged);
             // 
             // ConsultaGeral
             // 
@@ -297,7 +297,7 @@
             this.Name = "ConsultaGeral";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ConsultaGeral";
+            this.Text = "Consulta Geral";
             this.Load += new System.EventHandler(this.ConsultaGeral_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
             this.ResumeLayout(false);
@@ -311,19 +311,19 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkNome;
-        private System.Windows.Forms.CheckBox checkCondicao;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkFOB;
-        private System.Windows.Forms.CheckBox checkHRAC;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkEstrangeiro;
-        private System.Windows.Forms.CheckBox checkBrasileiro;
         private System.Windows.Forms.CheckBox checkExcluido;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Label lblNenhum;
         private System.Windows.Forms.DataGridView dgvPacientes;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBrasileiro;
+        private System.Windows.Forms.CheckBox checkEstrangeiro;
+        private System.Windows.Forms.CheckBox checkHRAC;
+        private System.Windows.Forms.CheckBox checkFOB;
+        private System.Windows.Forms.CheckBox checkNome;
+        private System.Windows.Forms.CheckBox checkCondicao;
     }
 }

@@ -512,6 +512,7 @@ namespace LabNeuropsico.Model.Entidades
     }
 
     public class Valor
+
     {
         private long id_valor;
         private long id_avaliacao;
@@ -594,6 +595,7 @@ namespace LabNeuropsico.Model.Entidades
                     break;
 
                 case "vdouble":
+                    valor = valor.Replace(",", ".");
                     if (valor == "")
                         Double = 0;
                     else
