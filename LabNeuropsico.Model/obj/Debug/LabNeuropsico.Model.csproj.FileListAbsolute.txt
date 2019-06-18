@@ -231,3 +231,4 @@ C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeu
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.csproj.CopyComplete
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.dll
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.pdb
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico.Model\obj\Debug\LabNeuropsico.Model.csprojAssemblyReference.cache

@@ -156,7 +156,6 @@ C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\config\pac
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\config\relatorio_create.txt
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\config\valid_create.txt
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\config\valor_create.txt
-C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\config\user_create.txt
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\LabNeuropsico.exe.config
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\LabNeuropsico.exe
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\LabNeuropsico.pdb
@@ -300,3 +299,8 @@ C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeurops
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.pdb
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Instrumentos.ConsultaGeral.resources
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Instrumentos.Visualizar.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Release\config\usuario_create.txt
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Users.Cadastro.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Users.ConsultaGeral.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Users.Main.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Release\LabNeuropsico.Users.Visualizar.resources

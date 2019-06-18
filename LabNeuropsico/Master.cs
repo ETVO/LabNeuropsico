@@ -42,9 +42,7 @@ namespace LabNeuropsico
             //Connection.Close();
         }
 
-        private void Master_Click(object sender, EventArgs e)
-        {
-        }
+        private void Master_Click(object sender, EventArgs e){}
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
@@ -53,9 +51,9 @@ namespace LabNeuropsico
 
         private void iniciar()
         {
-            Index index = new Index();
+            Login login = new Login();
             this.Hide();
-            index.ShowDialog();
+            login.ShowDialog();
             this.Close();
         }
 

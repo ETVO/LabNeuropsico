@@ -69,6 +69,10 @@ namespace LabNeuropsico.Pacientes.Relatorios
 
         void fillFields()
         {
+            DateTime today = DateTime.Today.Date;
+            dataInicioAval.MaxDate = today;
+            dataFimAval.MaxDate = today;
+
             lblNome.Text = paciente.Nome;
             txtRelatorio.Text = relatorio.Num_Relatorio;
             txtQueixaClinica.Text = relatorio.Queixa_Clinica;
@@ -87,12 +91,6 @@ namespace LabNeuropsico.Pacientes.Relatorios
             {
                 fillFields();
             }
-
-            DateTime today = DateTime.Today.Date;
-            dataInicioAval.MaxDate = today;
-            dataInicioAval.Value = today;
-            dataFimAval.MaxDate = today;
-            dataFimAval.Value = today;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

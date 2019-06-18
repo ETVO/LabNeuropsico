@@ -141,7 +141,6 @@ C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\config\pacie
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\config\relatorio_create.txt
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\config\valid_create.txt
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\config\valor_create.txt
-C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\config\user_create.txt
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\LabNeuropsico.exe.config
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\LabNeuropsico.exe
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\LabNeuropsico.pdb
@@ -285,3 +284,9 @@ C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsic
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsico.pdb
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsico.Instrumentos.ConsultaGeral.resources
 C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsico.Instrumentos.Visualizar.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsico.Users.ConsultaGeral.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsico.Users.Main.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsico.Users.Cadastro.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\config\usuario_create.txt
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\obj\Debug\LabNeuropsico.Users.Visualizar.resources
+C:\Users\Usuario\source\repos\LabNeuropsico\LabNeuropsico\bin\Debug\Resources\Guia_do_Usuario.pdf

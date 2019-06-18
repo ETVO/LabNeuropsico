@@ -68,6 +68,7 @@
     <Compile Include="Entidades.cs" />
     <Compile Include="Servico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
     <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>

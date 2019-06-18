@@ -31,10 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnPacientes = new System.Windows.Forms.Button();
             this.btnInstrumentos = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnConfig = new System.Windows.Forms.Button();
             this.btnSobre = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnAjuda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,15 +73,16 @@
             this.btnInstrumentos.UseVisualStyleBackColor = true;
             this.btnInstrumentos.Click += new System.EventHandler(this.btnInstrumentos_Click);
             // 
-            // button4
+            // btnUsers
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(19, 175);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(166, 41);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "&Usuários";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.Location = new System.Drawing.Point(19, 175);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(166, 41);
+            this.btnUsers.TabIndex = 4;
+            this.btnUsers.Text = "&Usuários";
+            this.btnUsers.UseVisualStyleBackColor = true;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnFechar
             // 
@@ -86,7 +91,7 @@
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(73, 32);
             this.btnFechar.TabIndex = 7;
-            this.btnFechar.Text = "&Sair";
+            this.btnFechar.Text = "&Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
@@ -108,18 +113,65 @@
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(166, 41);
             this.btnSobre.TabIndex = 6;
-            this.btnSobre.Text = "&Sobre";
+            this.btnSobre.Text = "Sobre";
             this.btnSobre.UseVisualStyleBackColor = true;
+            this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(481, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Logado como:";
+            // 
+            // lblNome
+            // 
+            this.lblNome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(359, 35);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(197, 51);
+            this.lblNome.TabIndex = 9;
+            this.lblNome.Text = "Nome";
+            this.lblNome.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // btnSair
+            // 
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(12, 406);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(96, 32);
+            this.btnSair.TabIndex = 10;
+            this.btnSair.Text = "Sair da conta";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // btnAjuda
+            // 
+            this.btnAjuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjuda.Location = new System.Drawing.Point(19, 316);
+            this.btnAjuda.Name = "btnAjuda";
+            this.btnAjuda.Size = new System.Drawing.Size(166, 41);
+            this.btnAjuda.TabIndex = 11;
+            this.btnAjuda.Text = "&Ajuda";
+            this.btnAjuda.UseVisualStyleBackColor = true;
+            this.btnAjuda.Click += new System.EventHandler(this.btnAjuda_Click);
             // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 450);
+            this.Controls.Add(this.btnAjuda);
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSobre);
             this.Controls.Add(this.btnConfig);
             this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnUsers);
             this.Controls.Add(this.btnInstrumentos);
             this.Controls.Add(this.btnPacientes);
             this.Controls.Add(this.label1);
@@ -140,10 +192,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPacientes;
         private System.Windows.Forms.Button btnInstrumentos;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Button btnSobre;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnAjuda;
     }
 }
 

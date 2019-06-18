@@ -27,7 +27,8 @@ namespace LabNeuropsico.Model.Suporte
         private static string user = "postgres";
         private static string password = "postgres";
 
-        private static List<string> tables = new List<string>(new string[] { "valid", "paciente", "user", "relatorio", "instrumento", "campo", "avaliacao", "valor" });
+        private static List<string> tables = new List<string>(new string[] 
+        { "valid", "paciente", "usuario", "relatorio", "instrumento", "campo", "avaliacao", "valor" });
 
         /// <summary>
         /// Construtor da classe

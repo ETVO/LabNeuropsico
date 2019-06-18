@@ -182,7 +182,7 @@ namespace LabNeuropsico.Pacientes.Relatorios
 
         private void btnCadastrarAvaliacao_Click(object sender, EventArgs e)
         {
-            Util.DisposeForm("Pacientes.Relatorios.Avaliacoes");
+            Util.DisposeForm("Pacientes.Relatorios.Avaliacoes.Cadastro");
 
             Avaliacoes.Cadastro cadastro = new Avaliacoes.Cadastro(relatorio);
             this.Hide();

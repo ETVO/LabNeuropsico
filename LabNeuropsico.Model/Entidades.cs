@@ -192,9 +192,9 @@ namespace LabNeuropsico.Model.Entidades
         }
     }
 
-    public class User
+    public class Usuario
     {
-        private long id_user;
+        private long id_usuario;
         private string nome;
         private string login;
         private string senha;
@@ -204,7 +204,7 @@ namespace LabNeuropsico.Model.Entidades
         private bool admin;
         private bool excluido;
 
-        public long Id_User { get => id_user; set => id_user = value; }
+        public long Id_Usuario { get => id_usuario; set => id_usuario = value; }
         public string Nome { get => nome; set => nome = value; }
         public string Login { get => login; set => login = value; }
         public string Senha { get => senha; set => senha = value; }
@@ -214,7 +214,7 @@ namespace LabNeuropsico.Model.Entidades
         public bool Is_Admin { get => admin; set => admin = value; }
         public bool Excluido { get => excluido; set => excluido = value; }
 
-        public User()
+        public Usuario()
         {
             ClearProperties();
         }
@@ -228,7 +228,7 @@ namespace LabNeuropsico.Model.Entidades
             List<object> param = new List<object>();
 
             if (with_id)
-                param.Add(Id_User);
+                param.Add(id_usuario);
             param.Add(Nome);
             param.Add(Login);
             param.Add(Senha);
@@ -243,28 +243,30 @@ namespace LabNeuropsico.Model.Entidades
         /// <summary>
         /// Transforma os parâmetros recebidos nas propriedades do objeto User
         /// </summary>
-        public void SetProperties(long id_user,
+        public void SetProperties(long id_usuario,
              string nome,
              string login,
              string senha,
              string email,
              char hospital,
              string obs,
-             bool admin)
+             bool admin,
+             bool excluido)
         {
-            Id_User = id_user;
+            Id_Usuario = id_usuario;
             Nome = nome;
             Login = login;
             Senha = senha;
             Email = email;
             Hospital = hospital;
             Obs = obs;
-            Is_Admin = admin; 
+            Is_Admin = admin;
+            Excluido = excluido;
         }
 
         public void ClearProperties()
         {
-            Id_User = 0;
+            Id_Usuario = 0;
             Nome = "";
             Login = "";
             Senha = "";
@@ -272,6 +274,7 @@ namespace LabNeuropsico.Model.Entidades
             Hospital = '\0';
             Obs = "";
             Is_Admin = false;
+            Excluido = false;
         }
     }
 

@@ -254,7 +254,7 @@
             this.btnCadastrarAvaliacao.Name = "btnCadastrarAvaliacao";
             this.btnCadastrarAvaliacao.Size = new System.Drawing.Size(173, 38);
             this.btnCadastrarAvaliacao.TabIndex = 6;
-            this.btnCadastrarAvaliacao.Text = "&Registrar Avaliação";
+            this.btnCadastrarAvaliacao.Text = "&Cadastrar Avaliação";
             this.btnCadastrarAvaliacao.UseVisualStyleBackColor = true;
             this.btnCadastrarAvaliacao.Click += new System.EventHandler(this.btnCadastrarAvaliacao_Click);
             // 

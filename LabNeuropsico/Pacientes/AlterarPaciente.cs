@@ -59,7 +59,7 @@ namespace LabNeuropsico.Pacientes
                 if (paciente.Nacionalidade == 'e') nacionalidade = 1;
 
                 if (paciente.Hospital == 'f') hospital = 1;
-                if (paciente.Hospital == 'a') hospital = 1;
+                if (paciente.Hospital == 'a') hospital = 2;
 
                 txtNome.Text = paciente.Nome;
                 dataNasc.Value = paciente.Data_Nasc;

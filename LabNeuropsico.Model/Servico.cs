@@ -31,15 +31,15 @@ namespace LabNeuropsico.Model
             return p;
         }
 
-        public static User ObjetoUser(ref NpgsqlDataReader dr)
+        public static Usuario ObjetoUsuario(ref NpgsqlDataReader dr)
         {
-            User u = new User();
+            Usuario u = new Usuario();
             if (!dr.HasRows)
                 return null;
 
-            u.SetProperties(Convert.ToInt64(dr["id_user"]), dr["nome"].ToString(), dr["login"].ToString(), 
+            u.SetProperties(Convert.ToInt64(dr["id_usuario"]), dr["nome"].ToString(), dr["login"].ToString(), 
                 dr["senha"].ToString(), dr["email"].ToString(), Convert.ToChar(dr["hospital"]),
-                dr["obs"].ToString(), Convert.ToBoolean(dr["admin"]));
+                dr["obs"].ToString(), Convert.ToBoolean(dr["admin"]), Convert.ToBoolean(dr["excluido"]));
 
             return u;
         }
@@ -296,12 +296,15 @@ namespace LabNeuropsico.Model
             Connection.Close();
         }
 
-        public static void SalvarUser(User u)
+        public static void SalvarUsuario(Usuario u)
         {
+            if (u.Login == "root")
+                throw new Exception("Login inválido! Não pode ser 'root'!");
+
             List<object> param = new List<object>();
             param = u.GetList(false);
 
-            string sql = "INSERT INTO user " +
+            string sql = "INSERT INTO usuario " +
                 "(nome, login, senha, email, " +
                 "hospital, obs, admin)" +
                 "VALUES (";
@@ -472,6 +475,25 @@ namespace LabNeuropsico.Model
             Connection.Close();
         }
 
+        public static void AlterarUsuario(Usuario u)
+        {
+            List<object> param = new List<object>();
+            param = u.GetList(false);
+
+            int i = 1;
+
+            string sql = "UPDATE public.usuario " +
+                "SET nome = @" + (i++) + ", login = @" + (i++) + ", " +
+                "senha = @" + (i++) + ", email = @" + (i++) + ", " +
+                "hospital = @" + (i++) + ", obs = @" + (i++) + ", " +
+                "admin = @" + (i++) + " " + 
+                "WHERE id_usuario = " + u.Id_Usuario;
+
+            Connection.Open();
+            Connection.Run(sql, param);
+            Connection.Close();
+        }
+
         // métodos para exclusão no banco
 
         public static void PacienteExcluido(Paciente p, bool excluido)
@@ -512,6 +534,17 @@ namespace LabNeuropsico.Model
             string sql = "UPDATE instrumento" +
                 " SET excluido = " + excluido +
                 " WHERE id_instrumento = " + i.Id_Instrumento + ";";
+
+            Connection.Open();
+            Connection.Run(sql);
+            Connection.Close();
+        }
+
+        public static void UsuarioExcluido(Usuario u, bool excluido)
+        {
+            string sql = "UPDATE usuario" +
+                " SET excluido = " + excluido +
+                " WHERE id_usuario = " + u.Id_Usuario + ";";
 
             Connection.Open();
             Connection.Run(sql);
@@ -560,12 +593,12 @@ namespace LabNeuropsico.Model
             return r;
         }
 
-        public static User BuscarUser(long id_user)
+        public static Usuario BuscarUsuario(long id_usuario)
         {
-            User u = new User();
+            Usuario u = new Usuario();
             
-            string sql = "SELECT * FROM user " +
-                "WHERE id_user = " + id_user;
+            string sql = "SELECT * FROM usuario " +
+                "WHERE id_usuario = " + id_usuario;
 
             Connection.Open();
             NpgsqlDataReader dr = Connection.Select(sql);
@@ -574,7 +607,47 @@ namespace LabNeuropsico.Model
                 return null;
 
             dr.Read();
-            u = ObjetoUser(ref dr);
+            u = ObjetoUsuario(ref dr);
+
+            Connection.Close();
+            return u;
+        }
+
+        public static Usuario BuscarUsuario(string user)
+        {
+            Usuario u = new Usuario();
+
+            string sql = "SELECT * FROM usuario " +
+                "WHERE login = '" + user + "'";
+
+            Connection.Open();
+            NpgsqlDataReader dr = Connection.Select(sql);
+
+            if (!dr.HasRows)
+                return null;
+
+            dr.Read();
+            u = ObjetoUsuario(ref dr);
+
+            Connection.Close();
+            return u;
+        }
+
+        public static Usuario LoginUsuario(string user)
+        {
+            Usuario u = new Usuario();
+
+            string sql = "SELECT * FROM usuario " +
+                "WHERE excluido = false AND login = '" + user + "'";
+
+            Connection.Open();
+            NpgsqlDataReader dr = Connection.Select(sql);
+
+            if (!dr.HasRows)
+                return null;
+
+            dr.Read();
+            u = ObjetoUsuario(ref dr);
 
             Connection.Close();
             return u;

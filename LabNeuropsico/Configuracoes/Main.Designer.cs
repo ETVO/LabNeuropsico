@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRestaurar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.lblRestrito = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -77,20 +80,39 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // toolTip
+            // 
+            this.toolTip.AutoPopDelay = 5000;
+            this.toolTip.InitialDelay = 500;
+            this.toolTip.ReshowDelay = 500;
+            // 
+            // lblRestrito
+            // 
+            this.lblRestrito.AutoSize = true;
+            this.lblRestrito.Location = new System.Drawing.Point(16, 125);
+            this.lblRestrito.Name = "lblRestrito";
+            this.lblRestrito.Size = new System.Drawing.Size(198, 13);
+            this.lblRestrito.TabIndex = 11;
+            this.lblRestrito.Text = "Restrito ao usuário root (consultar Ajuda)";
+            this.lblRestrito.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 450);
+            this.Controls.Add(this.lblRestrito);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnRestaurar);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Main";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +124,7 @@
         private System.Windows.Forms.Button btnRestaurar;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Label lblRestrito;
     }
 }

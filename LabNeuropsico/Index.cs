@@ -2,20 +2,30 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LabNeuropsico.Model;
+using LabNeuropsico.Model.Session;
 
 namespace LabNeuropsico
 {
     public partial class Index : Form
     {
+        bool admin = false;
+
         public Index()
         {
             InitializeComponent();
+        }
+
+        void disable()
+        {
+            btnUsers.Enabled = admin;
+            btnConfig.Enabled = admin;
         }
 
         private void btnPacientes_Click(object sender, EventArgs e)
@@ -30,7 +40,11 @@ namespace LabNeuropsico
 
         private void Index_Load(object sender, EventArgs e)
         {
+            admin = Session.Usuario.Is_Admin;
 
+            lblNome.Text = Session.Usuario.Nome;
+
+            disable();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -59,6 +73,41 @@ namespace LabNeuropsico
             this.Hide();
             configuracoes.ShowDialog();
             this.Close();
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            Util.DisposeForm("Users.Main");
+
+            Users.Main usuarios = new Users.Main();
+            this.Hide();
+            usuarios.ShowDialog();
+            this.Close();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Util.DisposeForm("Login");
+
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
+            this.Close();
+        }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            Util.DisposeForm("Sobre");
+
+            Sobre sobre = new Sobre();
+            this.Hide();
+            sobre.ShowDialog();
+            this.Close();
+        }
+
+        private void btnAjuda_Click(object sender, EventArgs e)
+        {
+            Process.Start(@".\Resources\Guia_do_Usuario.pdf");
         }
     }
 }

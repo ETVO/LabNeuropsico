@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LabNeuropsico.Model;
 using LabNeuropsico.Model.Suporte;
+using LabNeuropsico.Model.Session;
 
 namespace LabNeuropsico.Configuracoes
 {
@@ -17,6 +18,13 @@ namespace LabNeuropsico.Configuracoes
         public Main()
         {
             InitializeComponent();
+        }
+
+        bool checkRoot()
+        {
+            if (Session.Usuario.Login == "root" && Session.Usuario.Senha == "5a4092948705fa0a1b8886c75dd78a21")
+                return true;
+            return false;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
@@ -47,6 +55,16 @@ namespace LabNeuropsico.Configuracoes
             this.Hide();
             index.ShowDialog();
             this.Close();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            if (!checkRoot())
+            {
+                btnRestaurar.Enabled = false;
+                lblRestrito.Visible = true;
+            }
+
         }
     }
 }

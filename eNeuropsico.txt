@@ -1,6 +1,0 @@
-*PROGRAMA:
-	- AVALIAÇÕES
-	- INFORMAÇÕES (CONSULTAS)
-
-*GUIA:
-	- Como usar o sistema?
