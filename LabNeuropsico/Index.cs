@@ -107,7 +107,7 @@ namespace LabNeuropsico
 
         private void btnAjuda_Click(object sender, EventArgs e)
         {
-            Process.Start(@".\Resources\Guia_do_Usuario.pdf");
+            Process.Start(@"\Resources\Guia_do_Usuario.pdf");
         }
     }
 }

@@ -304,7 +304,7 @@ namespace LabNeuropsico.Model.Suporte
             return dt.Rows.Count > 0;
         }
 
-        public static void DropTables()
+        public static bool DropTables()
         {
             if(Util.Confirm("APAGAR TODOS OS DADOS É UMA AÇÃO IRREVERSÍVEL!\n\nContinuar?\nO sistema será reinicializado."))
             {
@@ -316,7 +316,11 @@ namespace LabNeuropsico.Model.Suporte
                 Run(sql);
 
                 //CreateTables();
+
+                return true;
             }
+            else
+                return false;
         }
 
         /// <summary>
