@@ -284,7 +284,7 @@ namespace LabNeuropsico.Model.Suporte
 
                 if(dt.Rows.Count == 0)
                 {
-                    sql = Util.RawText("config/"+ table +"_create");
+                    sql = Util.RawText("config/"+table +"_create");
 
                     Run(sql);
                 }

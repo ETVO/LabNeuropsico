@@ -24,8 +24,24 @@ namespace LabNeuropsico
 
         private void Master_Load(object sender, EventArgs e)
         {
-
-            //Connection.Open();
+            /*
+            while(true)
+            {
+                if (!Util.CheckInstalled("PostgreSQL"))
+                {
+                    if (Util.Confirm("Você precisa instalar o banco de dados para o sistema funcionar corretamente.\n\nDeseja continuar?"))
+                        System.Diagnostics.Process.Start(@"Resources/postgresql.exe");
+                    else
+                    {
+                        Application.Exit();
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+            */
 
             if (!Connection.CheckTables())
             {

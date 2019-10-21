@@ -346,13 +346,24 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="logo.ico" />
-    <None Include="Resources\Guia_do_Usuario.pdf">
+    <Content Include="logo.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\loading.gif" />
-    <None Include="Resources\Image1.gif" />
-    <None Include="Resources\Image1.bmp" />
+    </Content>
+    <Content Include="Resources\postgresql.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\Guia.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Image1.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Image1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="bin\imgs\search.png" />
     <Content Include="config\avaliacao_create.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

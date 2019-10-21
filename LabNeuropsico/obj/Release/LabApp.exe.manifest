@@ -15,16 +15,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          Opções de Manifesto UAC
-          Se desejar mudar o nível de Controle de Conta de Usuário do Windows, substitua o 
-          nó requestedExecutionLevel por um dos seguintes.
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Se deseja usar a Virtualização de Arquivos e Registro para compatibilidade 
-         com versões anteriores, exclua o nó requestedExecutionLevel.
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LabApp.exe" size="155112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LabApp.exe" size="161744">
       <assemblyIdentity name="LabApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>y66zrW4lbHkZBjRqPWp0h57FUIg1S0K68uoc3Rtcs6E=</dsig:DigestValue>
+        <dsig:DigestValue>aQytARYfDJ1IcbhjHoHm3MCmBDkhsj8RbBXNYwkTKLY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,19 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7Hal2FqR5Y0Yl+RxEiNLkaiyZkhoOcwTY5+CZqu3bt0=</dsig:DigestValue>
+        <dsig:DigestValue>pSzIlC9qWTK6ktrJePXODqOv+Xw9nMDfida2gTgF9LQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LabNeuropsico.Model.dll" size="33792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LabNeuropsico.Model.dll" size="35328">
       <assemblyIdentity name="LabNeuropsico.Model" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O01SDt4MVTnMk2I+F24pTvCkkmDu2iO8DTBwmnqH/Cs=</dsig:DigestValue>
+        <dsig:DigestValue>Sj3jk1Ws7NnLLlB5Ky60XfWtg+sVtnmm4ipz+fFzp4Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1320,6 +1320,15 @@
       <dsig:DigestValue>FXa8pMIyaoTkUCv9tdi4bnqaTOpcFj1pvJGld87nMJE=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="config\Guia.pdf" size="370660">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xyvMOcZsnzv2PxEuGM40sYuzVZaAkYgvAuBr/RTFA6Y=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="config\instrumento_create.txt" size="207">
     <hash>
       <dsig:Transforms>
@@ -1390,6 +1399,42 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>4DeXqXmmD1axFhV2aRLSq1GPLzhAZ/VOLjskKNai6t4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Image1.bmp" size="3382">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>feWmNmDjMyjjQ6i7E7qyxuv+zptyhzSVSHC6kJ1V1Hg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Image1.gif" size="882">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DUjDLsMRCrJ8A5mLGd/h0rB32iXFQzoNLEo4R2kI2WQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\loading.gif" size="5103">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yKoDjE8RuW4hQIJ0X/uOmVXPCUjzx3Bj+tKZOadZsw0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\postgresql.exe" size="63926840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nSUKSc5GQ/rbzi/thqbM5DzK4lwAHJY+kami886tbjQ=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
